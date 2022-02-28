@@ -1,0 +1,58 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    padding: 0%; 
+    margin: 0%;
+    display: flex;
+    height: 200 px;
+    width: 300 px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(184, 29, 29);
+}
+
+body.correct{
+    background-color: green;
+}
+body.wrong{
+    background-color: red;
+}
+.container{
+    width: 1000px;
+    max-width: 75%;
+    background-color: rgb(240, 139, 66);
+    border-radius: 5px;
+    padding: 10px;
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 5px;
+    margin: 15px 0;
+}
+ .btn{
+     border-radius: 5px;
+     border: solid 1px;
+     padding: 5px 10px;
+ }
+ .btn.correct{
+     background-color: green;
+ }
+ .btn.wrong{
+     background-color: red;
+ }
+ .start,.next,.save{
+     font-size: 1.5rem;
+     font-weight: bold;
+     padding: 20px;
+ }
+ .center{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .hidden{
+     display: none;
+ }
